@@ -216,6 +216,24 @@
     <Image Include="shooting_game.ico">
       <Filter>Default\리소스 파일</Filter>
     </Image>
+    <Image Include="Output\bin\content\texture\tile\TILE.bmp">
+      <Filter>Default\리소스 파일</Filter>
+    </Image>
+    <Image Include="Output\bin\content\texture\Enemy.bmp">
+      <Filter>Default\리소스 파일</Filter>
+    </Image>
+    <Image Include="Output\bin\content\texture\pilsal.bmp">
+      <Filter>Default\리소스 파일</Filter>
+    </Image>
+    <Image Include="Output\bin\content\texture\Player.bmp">
+      <Filter>Default\리소스 파일</Filter>
+    </Image>
+    <Image Include="Output\bin\content\texture\pung.bmp">
+      <Filter>Default\리소스 파일</Filter>
+    </Image>
+    <Image Include="Output\bin\content\texture\Shot.bmp">
+      <Filter>Default\리소스 파일</Filter>
+    </Image>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp" />

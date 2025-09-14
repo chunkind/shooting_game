@@ -202,6 +202,12 @@
     <ResourceCompile Include="shooting_game.rc" />
   </ItemGroup>
   <ItemGroup>
+    <Image Include="Output\bin\content\texture\Enemy.bmp" />
+    <Image Include="Output\bin\content\texture\pilsal.bmp" />
+    <Image Include="Output\bin\content\texture\Player.bmp" />
+    <Image Include="Output\bin\content\texture\pung.bmp" />
+    <Image Include="Output\bin\content\texture\Shot.bmp" />
+    <Image Include="Output\bin\content\texture\tile\TILE.bmp" />
     <Image Include="shooting_game.ico" />
     <Image Include="small.ico" />
   </ItemGroup>

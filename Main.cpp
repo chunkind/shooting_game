@@ -86,16 +86,16 @@ BOOL InitInstance(HINSTANCE hInstance, int nCmdShow)
 {
    hInst = hInstance;
 
-   HWND hWnd = CreateWindowW(L"ShootingGame", L"ShootingGame", WS_OVERLAPPEDWINDOW,
+   g_hWnd = CreateWindowW(L"ShootingGame", L"ShootingGame", WS_OVERLAPPEDWINDOW,
       CW_USEDEFAULT, 0, CW_USEDEFAULT, 0, nullptr, nullptr, hInstance, nullptr);
 
-   if (!hWnd)
+   if (!g_hWnd)
    {
       return FALSE;
    }
 
-   ::ShowWindow(hWnd, nCmdShow);
-   ::UpdateWindow(hWnd);
+   ::ShowWindow(g_hWnd, nCmdShow);
+   ::UpdateWindow(g_hWnd);
 
    return TRUE;
 }

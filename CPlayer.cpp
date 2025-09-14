@@ -28,7 +28,7 @@ CPlayer::CPlayer() : m_pTex(nullptr)
 	GetCollider()->SetOffsetPos(Vec2(0.f, 12.f));
 	GetCollider()->SetScale(Vec2(20.f, 40.f));
 
-	m_pPilsalAnimTex = CResMgr::GetInst()->LoadTexture(IDB_PISAL);
+	m_pPilsalAnimTex = CResMgr::GetInst()->LoadTexture(IDB_PILSAL);
 	// ÇÊ»ì±â
 	CreateAnimator();
 
@@ -127,7 +127,7 @@ void CPlayer::CreateMissile()
 
 void CPlayer::CreatePilsal()
 {
-	GetAnimator()->CreateAnimation(std::to_wstring(IDB_PISAL)
+	GetAnimator()->CreateAnimation(std::to_wstring(IDB_PILSAL)
 		, m_pPilsalAnimTex
 		, Vec2(0.f, 0.f)
 		, Vec2(64.f, 64.f)
@@ -137,5 +137,5 @@ void CPlayer::CreatePilsal()
 		, 6
 	);
 
-	GetAnimator()->Play(std::to_wstring(IDB_PISAL), false);
+	GetAnimator()->Play(std::to_wstring(IDB_PILSAL), false);
 }
