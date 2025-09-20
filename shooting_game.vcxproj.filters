@@ -234,6 +234,9 @@
     <Image Include="Output\bin\content\texture\Shot.bmp">
       <Filter>Default\리소스 파일</Filter>
     </Image>
+    <Image Include="Output\bin\content\texture\hp_bar.bmp">
+      <Filter>Default\리소스 파일</Filter>
+    </Image>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp" />

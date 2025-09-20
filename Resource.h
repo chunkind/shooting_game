@@ -19,6 +19,8 @@
 #define IDB_PUNG                        133
 #define IDB_SHOT                        135
 #define IDD_TILE_COUNT                  136
+#define IDB_BITMAP1                     137
+#define IDB_HP_BAR                      137
 #define IDC_EDIT1                       1000
 #define IDC_EDIT2                       1001
 #define ID_32771                        32771
@@ -32,7 +34,7 @@
 #ifdef APSTUDIO_INVOKED
 #ifndef APSTUDIO_READONLY_SYMBOLS
 #define _APS_NO_MFC                     1
-#define _APS_NEXT_RESOURCE_VALUE        137
+#define _APS_NEXT_RESOURCE_VALUE        138
 #define _APS_NEXT_COMMAND_VALUE         32775
 #define _APS_NEXT_CONTROL_VALUE         1002
 #define _APS_NEXT_SYMED_VALUE           110
