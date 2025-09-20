@@ -9,6 +9,7 @@
 #include "CCollisionMgr.h"
 #include "CKeyMgr.h"
 #include "CCamera.h"
+#include "CUI.h"
 
 CScene_Start::CScene_Start()
 {
@@ -50,6 +51,14 @@ void CScene_Start::Enter()
 	pOtherPlayer->SetPos(Vec2(740.f, 384.f));
 	AddObject(pOtherPlayer, GROUP_TYPE::PLAYER);*/
 
+
+	// UI 추가
+	Vec2 vResolution = CCore::GetInst()->GetResolution();
+	CUI* pUI = new CUI(false);
+	pUI->SetScale(Vec2(64.f * 5.f, 64.f * 2.f));
+	pUI->SetPos(Vec2(0.f, vResolution.y - 64.f * 2.f));
+	AddObject(pUI, GROUP_TYPE::UI);
+
 	// 카메라가 따라갈 오브젝트 설정
 	CCamera::GetInst()->SetTarget(pObj);
 
@@ -57,7 +66,6 @@ void CScene_Start::Enter()
 	float fMoveDist = 25.f;
 	float fObjScale = 50.f;
 
-	Vec2 vResolution = CCore::GetInst()->GetResolution();
 	float fTerm = (float)(vResolution.x - ((fMoveDist + fObjScale / 2.f) * 2)) / (float)(iMonCount - 1);
 
 	CMonster* pMonsterObj = nullptr;
